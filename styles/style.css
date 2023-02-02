@@ -11,3 +11,27 @@ body{
 }
 
 /*NOTE pc navbar */
+.pc-navbar{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.pc-navbar .navbar-brand img{
+    width: 150px;
+    margin-bottom: 5px;  
+}
+.offcanvas{
+    width: 100% !important;
+}
+.fixed-top{
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .3s ease-in-out;
+}
+@media(max-width:992px){
+    .pc-navbar .navbar-brand img{
+        width: 110px;
+        margin-bottom: 5px;  
+    }
+}
