@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		
     window.addEventListener('scroll', function() {
        
-        if (window.scrollY > 200) {
+        if (window.scrollY > 300) {
             document.getElementById('navbar_top').classList.add('fixed-top');
             // add padding top to show content behind navbar
             navbar_height = document.querySelector('.navbar').offsetHeight;
@@ -14,3 +14,10 @@ document.addEventListener("DOMContentLoaded", function(){
         } 
     });
 }); 
+$(document).ready(function(){
+    $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+    });
+   });
