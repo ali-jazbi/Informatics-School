@@ -132,18 +132,49 @@ body{
     border-radius: 5px;
     justify-content:space-around;
     align-items: center;
-    border: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     transition:.2s all ease-in-out
 }
 .pc-navbar .switch-version-btn button:hover{
     border-color: #75948b;
+    box-shadow: 0px 2px 7px rgb(212, 212, 212);
 }
 .pc-navbar .switch-version-btn button a{
     color: rgb(91, 91, 91);
     text-decoration: none;
 }
 .pc-navbar .switch-version-btn button i{
-    color:#75948b
+    color:#40b08e
+}
+.pc-navbar .signIN{
+    width: 87px;
+    height: 40px;
+    background-color: transparent;
+    color: #008545;
+    border-radius: 5px;
+    transition:.2s all ease-in-out;
+    font-size:15px;
+}
+.pc-navbar .signIN:hover{
+    background-color: #e8edf5a6
+}
+.pc-navbar .signUP{
+    width: 87px;
+    height: 40px;
+    transition:.2s all ease-in-out;
+    border-radius: 5px;
+    font-size:15px;
+    background-color: #008545;
+    color:white;
+}
+.pc-navbar .signUP:hover{
+    background-color: #01542c;
+    box-shadow: 0px 7px 7px rgb(193, 193, 193);
+}
+.pc-navbar .nav-item{
+    height: auto;
+    display: flex;
+    align-items: center;
 }
 @media(max-width:992px){
     .pc-navbar .navbar-brand img{
