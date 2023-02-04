@@ -9,6 +9,8 @@ body{
     height: 3000px;
     background-color:#008545;
     font-family: vazir,sans-serif;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 @font-face {
     font-family: vazir;
