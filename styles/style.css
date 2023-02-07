@@ -49,6 +49,8 @@ body{
     border-radius: 10px;
     height:39px;
     display: flex;
+    border-left: 1px solid rgb(106, 106, 106) !important;
+    z-index: 10;
     justify-content: center;
     align-items: flex-end;    
 } 
@@ -59,7 +61,8 @@ body{
     background-color: #E8EAED;
     transition: .2s all ease-in-out;
     height: 39px;
-    border-right: 1px solid black !important;
+    border-top: none !important;
+    border-bottom: none !important;
     border-left: none !important;
 }
 .pc-navbar .input-group input::placeholder{
@@ -69,6 +72,7 @@ body{
 .pc-navbar .input-group input:focus{
     background-color: #E8EDF5;
     box-shadow: none !important;
+    border: none !important;
 }
 .pc-navbar .input-group span{
     background-color: #E8EAED;
@@ -130,7 +134,7 @@ body{
     align-items: center;
     font-size: 15px;
     background-color: #EFEDE7;
-    margin-right: 30px;
+    margin-left: 30px;
     border-radius: 5px;
     justify-content:space-around;
     align-items: center;
