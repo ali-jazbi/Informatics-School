@@ -289,9 +289,13 @@
                       <button class="btn-open" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <i class="bi bi-list"></i>
                       </button>
-                      <button class="btn-search" type="button">
-                        <i class="bi bi-search"></i>
-                      </button>
+                      <div class="box">
+                          <form name="search">
+                              <input type="text" placeholder="چه چیزی میخواهید بیاموزید؟" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                          </form>
+                          <i class="fas fa-search"></i>
+                    
+                      </div>
                     </div>
                     <div class="logo-brand">
                         <img src="./icon/logo-no-background.png" alt="">

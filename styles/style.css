@@ -298,6 +298,66 @@ body{
     align-items: center;
     color: #008545; 
 }
+.box{
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    padding: 10px;
+    width: 20px;
+    height: 30px;
+    background: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #E8EAED;
+    outline: none;
+    margin-top: 5px;
+    transition: .5s;
+}
+.box:hover input{
+    width: 150px;
+    background: #049e53d5;
+    border-radius: 10px;
+}
+.box i{
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    color: #00854599;
+    transition: .2s;
+}
+.box input::placeholder{
+    font-size: 10px !important;
+    color: #e0e0e0bb;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+/* YouTube icon */
+#ytb {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 52px;
+  border: 2px solid transparent;
+  color: #ff1717;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+#ytb:hover{
+  border-radius: 50%;
+  border-color: #ff1717;
+  box-shadow: 0 0 10px #ff4040;
+}
 .mobile-navbar .offcanvas .btn-close{
     box-shadow: none !important;
 }
