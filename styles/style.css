@@ -7,7 +7,7 @@
 body{
     width:100%;
     height: 3000px;
-    background-color:#008545;
+    background-color:#f1f1f1;
     font-family: vazir,sans-serif;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -19,10 +19,13 @@ body{
 /*NOTE pc navbar */
 .pc-navbar{
     height: 70px;
+    width: 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
+    position: fixed;
+    transition: all .3s ease-in-out;
 }
 .pc-navbar .navbar-brand img{
     width: 150px;
@@ -181,6 +184,8 @@ body{
     height: auto;
     display: flex;
     width: 110px;
+    height: 40px;
+    cursor: pointer;
     align-items: center;
     transition: .2s all ease-in-out;
     border-radius: 5px;
@@ -188,13 +193,14 @@ body{
 }
 .pc-navbar .full-drop-menu{
     width: 100%;
-    height:420px;
+    height:455px;
     left: 0;
     top: 70px;
     display:flex;
     opacity: 0;
     visibility: hidden;
     position: absolute;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-top: 4px solid rgba(0, 0, 0, 0.135);
     background-color:rgb(255, 255, 255);
     transition: .2s all ease-in-out;
@@ -203,6 +209,42 @@ body{
 .pc-navbar .hoverFullMenu:hover .full-drop-menu{
     opacity: 1;
     visibility: visible;
+}
+.pc-navbar .hoverFullMenu .boxLink{
+    width: 200px;
+    height: 90px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: .2s all ease-in-out;
+    direction: ltr !important;
+}
+.pc-navbar .hoverFullMenu .boxLink:hover{
+    background-color: #E8EDF5;
+    cursor: pointer;
+}
+.pc-navbar .hoverFullMenu .boxLink .h6{
+    font-size: 16px !important;
+    margin-bottom: 2px;
+    direction: ltr !important;
+    text-align: start;
+}
+.pc-navbar .hoverFullMenu .boxLink span{
+    font-size: 12px;
+    color:#6b707cbf;
+    direction: ltr !important;
+    text-align: center !important;
+}
+.pc-navbar .hoverFullMenu .fullnavbar-links h5{
+    font-size: 17px;
+}
+.pc-navbar .hoverFullMenu .boxLink .col-10{
+    padding-left: 20px;
+}
+.pc-navbar .hoverFullMenu .fullnavbar-links a{
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    color: #008545;
+    text-decoration: none;
 }
 .pc-navbar h6{
     color:#008545
