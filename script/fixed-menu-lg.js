@@ -15,3 +15,16 @@ window.addEventListener("scroll", function() {
       document.querySelector(".mobile-navbar").style.boxShadow = "none";
     }
   });  
+  
+  function hoverMENU(){
+    document.querySelector(".header-shape").style.visibility="hidden";
+    document.querySelector(".header-shape1").style.visibility="hidden";
+    document.querySelector(".header-shape").style.opacity="0";
+    document.querySelector(".header-shape1").style.opacity="0";
+  }
+  function unhoverMENU(){
+    document.querySelector(".header-shape").style.visibility="visible";
+    document.querySelector(".header-shape1").style.visibility="visible";
+    document.querySelector(".header-shape").style.opacity="1";
+    document.querySelector(".header-shape1").style.opacity="1";
+  }

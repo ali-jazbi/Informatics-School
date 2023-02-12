@@ -450,3 +450,19 @@ body{
         width: 100%;
     }
 }
+
+/* NOTE Banner */
+.header{
+    padding-top: 50px;
+    width: 100%;
+    height: 450px !important;
+    display: flex;
+    z-index: -2;
+    align-items: end;
+}
+.header img{
+    width: 50%;
+    height: 50px;
+    z-index: 1;
+    transition: .1s all ease-out;
+}
