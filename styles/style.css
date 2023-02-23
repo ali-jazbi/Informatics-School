@@ -473,6 +473,11 @@ body{
     height: 50px;
     z-index: 1;
     transition: .1s all ease-out;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 .header #container{
     color:#f7f7f7;
@@ -812,14 +817,17 @@ body{
     }
 }
 /* End Banner */
+
+/* NOTE Vertical Line */
 .hr-fixed{
     display: flex;
     justify-content: center;
-    margin-top:170px;
+    margin-top:155px;
     position: -webkit-sticky;
     position: sticky;
     top: 190px;
 }
+
 .divider
 {
 	position: relative;
@@ -854,4 +862,24 @@ body{
 	border-radius: 50%;
 	box-shadow: inset 0 0 0 2px #f1f1f1,
 					0 0 0 4px #f1f1f1;
+}
+
+/* End Vertical Line*/
+
+/* NOTE Main Body School */
+.school-body{
+    width: 100%;
+    height: 1500px;
+}
+.school-body .img-school{
+    width: 100%;
+    direction: ltr;
+}
+.school-body .img-school img{
+    width: 95%;
+}
+@media(min-width:992px){
+    .school-body{
+        border-top: 1px solid;
+    }
 }
