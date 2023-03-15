@@ -17,6 +17,22 @@ body{
     font-family: vazir;
     src: url("../font/vazir.ttf");
 }
+
+/* custom scroll bar css */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #008545;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #004d28;
+}
+
+
 /*NOTE pc navbar */
 .pc-navbar{
     height: 70px;
