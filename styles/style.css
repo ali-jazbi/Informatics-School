@@ -52,7 +52,7 @@ body{
 
 .progress-bar {
     background-color: #008545;
-    height: 7px;
+    height: 4px;
     width: 0%;
 }
 
@@ -67,6 +67,7 @@ body{
     transform: translateY(0);
     opacity: 1;
 }
+
 /* NOTE Loader */
 .loader{
     width: 100%;
