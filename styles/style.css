@@ -42,9 +42,6 @@ body{
     align-items: center;
     background-color: white;
 }
-.hide{
-    display: none;
-}
 .pencil{
     display: block;
     width: 10em;
