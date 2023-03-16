@@ -32,7 +32,41 @@ body{
     background: #004d28;
 }
 
+/* NOTE Scroll progress bar */
+.scroll-progress{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 70px;
+}
+@media screen and (max-width: 768px){
+    .scroll-progress{
+        margin-top: 60px;
+    }
+}
+.progress-container {
+    background-color: rgba(150, 150, 150, 0);
+    width: 100%;
+}
 
+.progress-bar {
+    background-color: #008545;
+    height: 7px;
+    width: 0%;
+}
+
+/* NOTE Scroll fade Effect */
+.appear{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: .7s all ease;
+}
+.appear.active{
+    transform: translateY(0);
+    opacity: 1;
+}
 /* NOTE Loader */
 .loader{
     width: 100%;
