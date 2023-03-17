@@ -1,5 +1,6 @@
+document.querySelector('main').style.display = 'none';
+document.querySelector('body').style.height = 'auto';
 window.addEventListener('load', function(){
         document.querySelector('.loader').classList.add('hide');
-        document.body.style.overflow = 'auto';
+        document.querySelector('main').style.display = 'block'; 
 });
-document.body.style.overflow = 'hidden';
