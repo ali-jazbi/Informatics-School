@@ -1,8 +1,8 @@
-document.querySelector('body').style.overflow = 'hidden';
+document.querySelector('body').style.overflowY = 'hidden';
 document.querySelector('main').style.display = 'none';
-document.querySelector('body').style.height = 'auto';
 window.addEventListener('load', function(){
         document.querySelector('.loader').classList.add('hide');
         document.querySelector('main').style.display = 'block'; 
-        document.querySelector('body').style.overflow = 'auto';
+        document.querySelector('body').style.overflowY = 'auto';
+        document.querySelector('body').style.height = '3000px';
 });
