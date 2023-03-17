@@ -12,6 +12,7 @@ body{
     font-family: vazir,sans-serif;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    overflow: hidden;
 }
 @font-face {
     font-family: vazir;
