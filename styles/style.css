@@ -105,9 +105,10 @@ body{
         justify-content: center;
     }
     #btn-back-to-top i{
-        font-size: 12px;
+        font-size: 11px;
         line-height: 35px;
         margin-left: 5px !important;
+        margin-top: -3px;
     }
 }
 /* NOTE Loader */
