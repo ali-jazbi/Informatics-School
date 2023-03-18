@@ -12,6 +12,7 @@ body{
     font-family: vazir,sans-serif;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 @font-face {
     font-family: vazir;
@@ -815,6 +816,7 @@ body{
 }
 .mobile-navbar .offcanvas .offcanvas-body{
     padding: 0;
+    overflow-x: hidden !important;
 }
 .mobile-navbar .offcanvas .loginBTN{
     width: 100%;
@@ -824,6 +826,13 @@ body{
     align-items: center;
     justify-content: center;
 }
+/* mobile size scroll off */
+@media (max-width: 992px) {
+    .mobile-navbar .offcanvas ::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
 .mobile-navbar .offcanvas .loginBTN button{
     width: 90px;
     height: 35px;
