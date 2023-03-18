@@ -19,7 +19,7 @@ body{
     src: url("../font/vazir.ttf");
 }
 
-/* NOTE custom scroll bar css */
+/* NOTE custom scroll bar css */ 
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -69,6 +69,30 @@ body{
     opacity: 1;
 }
 
+ /* NOTE Back to top button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: #008545;
+    border: none !important;
+    border-radius: 50px 0px 0px 0px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s all ease;
+    z-index: 1000;
+}
+#btn-back-to-top:hover{
+        box-shadow: 0px 0px 10px 0px #008545;
+}
+#btn-back-to-top i{
+    font-size: 15px;
+    line-height: 50px;
+    margin-left: 10px;
+}
 /* NOTE Loader */
 .loader{
     width: 100%;
