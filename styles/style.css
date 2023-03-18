@@ -95,6 +95,21 @@ body{
     line-height: 50px;
     margin-left: 10px;
 }
+/* make button and icon smaller in mobile size */
+@media screen and (max-width: 768px){
+    #btn-back-to-top{
+        width: 35px;
+        height: 35px;
+        border-radius: 35px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    #btn-back-to-top i{
+        font-size: 12px;
+        line-height: 35px;
+        margin-left: 5px !important;
+    }
+}
 /* NOTE Loader */
 .loader{
     width: 100%;
