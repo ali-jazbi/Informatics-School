@@ -86,6 +86,8 @@ body{
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
+    display: flex;
+    justify-content: center;
 }
 #btn-back-to-top:hover{
         box-shadow: 0px 0px 10px 0px #008545;
