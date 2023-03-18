@@ -1555,10 +1555,18 @@ footer i{
     padding: 17px;
     font-size: 22px;
     color: #8996a0;
+    transition: .15s all ease-in-out;
+}
+footer i:hover{
+    color: #006936;
 }
 .footer-text{
     color: #8996a0;
     text-decoration: none;
+    transition: .15s all ease-in-out;
+}
+footer a:hover{
+    color: #006936;
 }
 .font-size-18{
     font-size: 18px;
