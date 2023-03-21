@@ -519,7 +519,7 @@ body{
     transition: transform .4s ease-in-out;
 }
 .pc-navbar .input-group{
-    width: 384px;
+    width: 314px;
     background-color: #E8EAED;
     border-radius: 10px;
     height: 39px;
@@ -549,7 +549,7 @@ body{
 }
 .pc-navbar .input-group input::placeholder{
     color:rgb(181, 181, 181);
-    font-size:15px
+    font-size:13px
 }
 .pc-navbar .input-group input:focus{
     background-color: #E8EDF5;
@@ -610,7 +610,7 @@ body{
 }
 .pc-navbar .switch-version-btn button{
     display: flex;
-    width: 170px;
+    width: 150px;
     height: 37px;
     display: flex;
     align-items: center;
