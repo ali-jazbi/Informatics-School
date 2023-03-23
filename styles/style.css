@@ -1357,12 +1357,14 @@ body{
     padding-top: 50px;
 }
 .school-body .text-school{
-    width: 95%;
+    width: 85%;
     text-align: justify;
     padding-right: 5%;
 }
 .school-body .text-school h1{
     line-height: 1.6;
+    font-size: 31px;
+    justify-content: justify;
 }
 .school-body .text-school h1 span{
     color: #006936;
@@ -1384,7 +1386,7 @@ body{
 }
 
 .school-body .text-school button.learn-more {
-    width: 12rem;
+    width: 11rem;
     height: auto;
 }
 
@@ -1467,15 +1469,17 @@ body{
 .school-body .text-school p{
     margin-top: 25px;
     color:#0000009a;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8;
 }
 .school-body .img-school{
     width: 100%;
     direction: ltr;
+    display: flex;
+    justify-content: center;
 }
 .school-body .img-school img{
-    width: 95%;
+    width: 85%;
     border: 3px solid #006936;
     border-radius: 3px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
@@ -1488,18 +1492,29 @@ body{
         border-top: 1px solid;
     }
 }
+
 @media(max-width:762px){
+    .school-body .img-school{
+        width: 100%;
+        justify-content: center;
+        padding-right: 5%;
+    }
+    .school-body .img-school img{
+        width: 95%;
+    }
     .school-body section:not(:first-child){
         margin-top: 100px;
     }
     .school-body .text-school{
         margin-top: 30px;
+        width: 95%;
+        padding-right: 8%;
     }
     .school-body .text-school h1{
-        font-size: 22px;
+        font-size: 20px;
     }
     .school-body .text-school p{
-        font-size: 13px;
+        font-size: 12px;
     }
     .school-body .text-school button.learn-more .circle {
         width: 2rem;
@@ -1526,6 +1541,17 @@ body{
     }
     
 }
+/* only tablet media query */
+@media(min-width:762px) and (max-width:992px){
+    .school-body{
+        margin-top: 100px;
+    }
+    .school-body .text-school{
+        width: 88%;
+        padding-right: 9%;
+    }
+}
+
 footer{
     margin-top: 500px;
 }
