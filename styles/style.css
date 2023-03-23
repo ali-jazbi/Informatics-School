@@ -1304,6 +1304,7 @@ body{
 /* End Banner */
 
 /* NOTE Vertical Line */
+
 .hr-fixed{
     display: flex;
     justify-content: center;
@@ -1311,6 +1312,9 @@ body{
     position: -webkit-sticky;
     position: sticky;
     top: 190px;
+    transition: .1s all ease-in-out;
+    visibility: visible;
+    opacity: 1;
 }
 
 .divider
@@ -1552,6 +1556,18 @@ body{
     }
 }
 
+/* NOTE Section Cards */
+.section-cards{
+    width: 100%;
+    height: 500px;
+    background-color: red;
+    margin-top: 200px;
+}
+/* NOTE Footer*/
+.hr-fixed-sticky{
+    visibility: hidden;
+    opacity: 0;
+}
 footer{
     margin-top: 500px;
 }

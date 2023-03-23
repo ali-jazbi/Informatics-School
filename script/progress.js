@@ -11,8 +11,20 @@ let mybutton = document.getElementById("btn-back-to-top");
 window.onscroll = function () {
     scrollFunction();
     progressBarScroll();
+    fixSticky();
 };
-
+var sticky = document.querySelector('.hr-fixed');
+var limit = document.querySelector('.section-cards').offsetTop - sticky.offsetHeight;
+// JavaScript
+const hrFixed = document.querySelector('.hr-fixed');
+const sectionCards = document.querySelector('.section-cards');
+function fixSticky() {
+    if (window.pageYOffset >= sectionCards.offsetTop-500) {
+        hrFixed.classList.add('hr-fixed-sticky');
+    } else {
+        hrFixed.classList.remove('hr-fixed-sticky');
+    }
+}
 function scrollFunction() {
   if (
     document.body.scrollTop > 20 ||
