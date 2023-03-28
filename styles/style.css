@@ -493,7 +493,9 @@ body{
               transform: translate(100px,100px) rotate(112deg);
     }
 }
-
+.fs-7{
+    font-size: 13px;
+}
 /*NOTE pc navbar */
 .pc-navbar{
     height: 70px;
