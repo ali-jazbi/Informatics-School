@@ -2,7 +2,7 @@
 article{
     padding-top: 20px;
     width: 100%;
-    height: 800px;
+    height: 550px;
     z-index: -2;  
 }
 p {
@@ -176,7 +176,7 @@ p {
     
     .check:checked {
     -webkit-animation: a .3s ease-in forwards;
-            animation: a .3s ease-in forwards;
+    animation: a .3s ease-in forwards;
     background-color: rgb(120, 190, 120);
     }
     
@@ -226,7 +226,7 @@ p {
               transform: scale(1) rotateY(360deg);
     }
     }
-  article .signIN {
+    article .signIN {
     display: inline-block;
     border-radius: 4px;
     background-color: #008545;
@@ -270,7 +270,7 @@ p {
     opacity: 1;
     left: 0;
     }
-    .forgot-pass {
+    .forgot-pass{
       text-decoration: none !important;
       position: relative;
       transition: color 0.3s;
@@ -312,7 +312,7 @@ p {
       margin-left: auto;
     }
     
-    .register button::after, button::before {
+    .register button::after, .register button::before {
       content: '';
       width: 0%;
       height: 2px;
@@ -328,4 +328,82 @@ p {
     .register button:hover{
       color: #008545;
     }
-    
+
+/* NOTE Mobile Size */
+@media (max-width:762px){
+  article{
+    width: 100%;
+    height: 750px;
+    margin-top: -0% !important;
+  }
+  .content{
+    padding-top: 15% !important;
+  }
+  .vector-animated{
+    display:flex;
+    justify-content: center;
+  }
+  lottie-player{
+    width: 200px !important;
+    height: auto !important;
+  }
+  .contents h3{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .contents .fs-7{
+    text-align: center;
+    font-size: 12px;
+  }
+  .contents form .signIN{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 98%;
+  }
+  .contents form .text-left{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 50px !important;
+  }
+  .contents form .social-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .contents form .social-login a{
+    margin:0 10px 0 10px;
+  }
+  .contents form .social-login .register a button{
+    margin-top: 40px;
+    color: #008545 !important;
+  }
+  .contents form .forgot-check{
+    padding: 10px;
+  }
+  .contents form .forgot-check label{
+      font-size: 14px;
+      padding-top: 6px !important;
+  }
+  .contents form .forgot-check .check{
+    width: 15px;
+    height: 15px;
+    margin-top: 6px !important;
+  }
+  .contents form .forgot-check .check::before{
+    width: .3em;
+    height: .5em;
+    border-width: 0 .2em .2em 0;
+    right: calc(65% - .3em);
+    top: calc(75% - .6em);
+  }
+  .contents form .forgot-check .forgot-pass{
+    font-size: 14px;
+  }
+  
+}
