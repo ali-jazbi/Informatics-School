@@ -40,7 +40,7 @@ p {
       border-bottom: 1px solid #e6edf1;
     }
     .eye-icon{
-      margin-right: 80% !important;
+      margin-right: 90% !important;
       cursor: pointer;
       visibility: hidden;
       opacity: 0;
@@ -235,7 +235,7 @@ p {
     text-align: center;
     font-size: 17px;
     padding: 7px;
-    width: 120px;
+    width: 100%;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
@@ -406,4 +406,82 @@ p {
     font-size: 14px;
   }
   
+}
+/* NOTE Tablet size */
+@media (min-width:763px) and (max-width:1024px){
+  article{
+    width: 100%;
+    height: 900px;
+  }
+  .content{
+    margin-top: -8%;
+  }
+  .vector-animated{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  }
+  lottie-player{
+    width: 360px !important;
+    height: auto !important;
+  }
+  .contents h3{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .contents .fs-7{
+    text-align: center;
+    font-size: 15px;
+  }
+  .contents form .signIN{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 98%;
+  }
+  .contents form .text-left{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 50px !important;
+  }
+  .contents form .social-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .contents form .social-login a{
+    margin:0 10px 0 10px;
+  }
+  .contents form .social-login .register a button{
+    margin-top: 40px;
+    font-size:17px;
+    color: #008545 !important;
+  }
+  .contents form .forgot-check{
+    padding: 10px;
+  }
+  .contents form .forgot-check label{
+      font-size: 15px;
+      padding-top: 6px !important;
+  }
+  .contents form .forgot-check .check{
+    width: 15px;
+    height: 15px;
+    margin-top: 6px !important;
+  }
+  .contents form .forgot-check .check::before{
+    width: .3em;
+    height: .5em;
+    border-width: 0 .2em .2em 0;
+    right: calc(65% - .3em);
+    top: calc(75% - .6em);
+  }
+  .contents form .forgot-check .forgot-pass{
+    font-size: 15px;
+  }
 }
