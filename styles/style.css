@@ -843,10 +843,10 @@ body{
     border-radius: 5px;
     color: white;
 }
-.mobile-navbar .offcanvas .loginBTN button:first-child{
+.mobile-navbar .offcanvas .loginBTN a:first-child button{
     background-color: transparent;
 }
-.mobile-navbar .offcanvas .loginBTN button:last-child{
+.mobile-navbar .offcanvas .loginBTN a:last-child button{
     background-color: #008545;
 }
 .mobile-navbar .offcanvas ul{
