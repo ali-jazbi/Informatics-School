@@ -700,7 +700,13 @@
       
       
       
-                  
+      <script>
+        document.querySelector('main').style.display = 'none';
+        window.addEventListener('load', function(){
+                document.querySelector('.loader').classList.add('hide');
+                document.querySelector('main').style.display = 'block'; 
+        });
+      </script>         
     </main>
 
           
@@ -717,6 +723,6 @@
     <script src="./script/style-header.js"></script>
     <script src="./script/fixed-menu-lg.js"></script>
     <script src="./script/main.js"></script>
-    <script src="./script/loader.js"></script>
+    <!-- <script src="./script/loader.js"></script> -->
   </body>
 </html>
