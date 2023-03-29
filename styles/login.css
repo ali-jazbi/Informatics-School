@@ -286,7 +286,9 @@ input:-webkit-autofill:active{
       position: relative;
       transition: color 0.3s;
     }
-
+    .contents h3{
+      font-size: 22px;
+    }
     .forgot-pass:before {
       content: "";
       position: absolute;
@@ -355,7 +357,7 @@ input:-webkit-autofill:active{
     justify-content: center;
   }
   lottie-player{
-    width: 200px !important;
+    width: 250px !important;
     height: auto !important;
   }
   .contents h3{
@@ -367,7 +369,7 @@ input:-webkit-autofill:active{
     font-size: 12px;
   }
   .contents form .signIN{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -498,4 +500,27 @@ input:-webkit-autofill:active{
   .contents form .forgot-check .forgot-pass{
     font-size: 15px;
   }
+}
+
+.text-divider {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.text-divider::before, .text-divider::after {
+  content: "";
+  display: block;
+  height: 0.09em;
+  width: 30vw;
+  margin: 10px;
+}
+.text-divider::before {
+  background: linear-gradient(to right, #004f29, white);
+  margin-right: 4vh;
+}
+.text-divider::after {
+  background: linear-gradient(to left, #004f29, white);
+  margin-left: 4vh;
 }
