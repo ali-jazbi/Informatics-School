@@ -19,8 +19,16 @@ p {
     padding: 7rem 0; 
   }
   h2 {
-    font-size: 20px; }
-  
+    font-size: 20px;
+  }
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #ECF3F0 inset !important;
+}
+
   @media (max-width: 991.98px) {
     .content .bg {
       height: 500px; } }
@@ -40,11 +48,14 @@ p {
       border-bottom: 1px solid #e6edf1;
     }
     .eye-icon{
-      margin-right: 90% !important;
+      margin-right: 85% !important;
       cursor: pointer;
       visibility: hidden;
       opacity: 0;
       transition: .3s all ease-in-out;
+    }
+    .eye-icon i{
+      font-size: larger;
     }
       .content .contents .form-group label, .content .bg .form-group label {
         position: absolute;
@@ -78,7 +89,7 @@ p {
     .content .contents .form-control, .content .bg .form-control {
       border: none;
       padding: 0;
-      font-size: 20px;
+      font-size: 16px;
       border-radius: 0; }
       .content .contents .form-control:active, .content .contents .form-control:focus, .content .bg .form-control:active, .content .bg .form-control:focus {
         outline: none;
@@ -400,7 +411,7 @@ p {
     height: .5em;
     border-width: 0 .2em .2em 0;
     right: calc(65% - .3em);
-    top: calc(75% - .6em);
+    top: calc(80% - .6em);
   }
   .contents form .forgot-check .forgot-pass{
     font-size: 14px;
@@ -446,6 +457,9 @@ p {
     font-size: 15px;
     margin-top: 50px !important;
   }
+  .eye-icon{
+    margin-right: 90% !important;
+  }
   .contents form .social-login{
     display: flex;
     flex-direction: column;
@@ -479,7 +493,7 @@ p {
     height: .5em;
     border-width: 0 .2em .2em 0;
     right: calc(65% - .3em);
-    top: calc(75% - .6em);
+    top: calc(80% - .6em);
   }
   .contents form .forgot-check .forgot-pass{
     font-size: 15px;

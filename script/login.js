@@ -23,11 +23,11 @@ function toggleIcon() {
 	}
 	// change icon by click
 	const iconElement = document.getElementById("icon-element");
-	if (iconElement.classList.contains("bi-eye-fill")) {
-	  iconElement.classList.remove("bi-eye-fill");
-	  iconElement.classList.add("bi-eye-slash-fill");
-	} else {
+	if (iconElement.classList.contains("bi-eye-slash-fill")) {
 	  iconElement.classList.remove("bi-eye-slash-fill");
 	  iconElement.classList.add("bi-eye-fill");
+	} else {
+	  iconElement.classList.remove("bi-eye-fill");
+	  iconElement.classList.add("bi-eye-slash-fill");
 	}
   }
