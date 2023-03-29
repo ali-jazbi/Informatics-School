@@ -565,13 +565,19 @@
 
         
         
-                    
+        <script>
+            document.querySelector('main').style.display = 'none';
+            window.addEventListener('load', function(){
+                    document.querySelector('.loader').classList.add('hide');
+                    document.querySelector('main').style.display = 'block'; 
+            });
+        </script>           
         </main>
 
             
 
 
-        <script src="./script/loader.js"></script>
+        <!-- <script src="./script/loader.js"></script> -->
         <script src="./plugins/jquery/jquery.min.js"></script>
         <script src="./plugins/Bootstrap/bootstrap.bundle.min.js"></script>
         <script src="./plugins/fontawesome/script.js"></script>
