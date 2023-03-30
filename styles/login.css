@@ -366,7 +366,7 @@ input:-webkit-autofill:active{
   }
   .contents .fs-7{
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
   }
   .contents form .signIN{
     display: flex; 
@@ -513,7 +513,7 @@ input:-webkit-autofill:active{
   content: "";
   display: block;
   height: 0.09em;
-  width: 30vw;
+  width: 25vw;
   margin: 10px;
 }
 .text-divider::before {
