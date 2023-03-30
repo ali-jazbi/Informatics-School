@@ -118,7 +118,7 @@ input:-webkit-autofill:active{
     align-items: center;
     justify-content: space-between;
   }
-  .social-login a{
+  .social-login a {
     text-decoration: none;
     position: relative;
     text-align: center;
@@ -310,6 +310,9 @@ input:-webkit-autofill:active{
       visibility: visible;
       transform: scaleX(1);
     }
+    .register a{
+      border-radius: 0;
+    }
     .register button{
       color: #616161;
       text-decoration: none;
@@ -320,7 +323,13 @@ input:-webkit-autofill:active{
       cursor: pointer;
       transition:.5s all ease-in-out;
     }
-    
+    .register button a{
+      color: #008545;
+      display: inline;
+    }
+    .register button a:hover{
+      color: #008545;
+    }
     .register button::before {
       margin-left: auto;
     }
@@ -392,7 +401,7 @@ input:-webkit-autofill:active{
   .contents form .social-login a{
     margin:0 10px 0 10px;
   }
-  .contents form .social-login .register a button{
+  .contents form .social-login .register button{
     margin-top: 40px;
     color: #008545 !important;
   }
@@ -473,7 +482,7 @@ input:-webkit-autofill:active{
   .contents form .social-login a{
     margin:0 10px 0 10px;
   }
-  .contents form .social-login .register a button{
+  .contents form .social-login .register button{
     margin-top: 40px;
     font-size:17px;
     color: #008545 !important;
