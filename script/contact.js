@@ -20,10 +20,10 @@
 					}
 				},
 				messages: {
-					name: "Please enter your name",
-					subject: "Please enter your subject",
-					email: "Please enter a valid email address",
-					message: "Please enter a message"
+					name: "لطفا نام خود را وارد کنید",
+					subject: "لطفا موضوع را وارد کنید",
+					email: "لطفا ایمیل خود را وارد کنید",
+					message: "لطفا پیام خود را وارد کنید"
 				},
 				/* submit via ajax */
 				
@@ -70,7 +70,7 @@
 			            }
 				      },
 				      error: function() {
-				      	$('#form-message-warning').html("Something went wrong. Please try again.");
+				      	$('#form-message-warning').html("اشکالی رخ داد ، لطفا دوباره تلاش کنید");
 				         $('#form-message-warning').fadeIn();
 				         $submit.css('display', 'none');
 				      }
