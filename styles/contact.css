@@ -54,7 +54,7 @@
 /* make container fluid width = 100 on max 992px */
 @media (max-width: 992px) {
     .contact-form .container-fluid{
-        width: 90% !important;
+        width: 95% !important;
     }
 }
 .wrapper {
