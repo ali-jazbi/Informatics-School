@@ -230,7 +230,9 @@ height: inherit !important; }
 .info-wrap .dbox .text {
   width: calc(100% - 50px);
 }
-
+.info-wrap .text p{
+  font-size: 14px;
+}
 .pl-3, .px-3 {
   padding-left: 1rem !important;
 }
