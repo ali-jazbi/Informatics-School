@@ -20,6 +20,10 @@
     justify-content: center;
     
 }
+.google-map iframe{
+    width: 100%;
+    height: 100%;
+}
 .dashed{
   --b: 5px;  /* border thickness */
   --s: 30px; /* size of the dashes */
