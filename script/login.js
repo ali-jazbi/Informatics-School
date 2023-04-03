@@ -42,13 +42,12 @@ function toggleIcon2() {
 				  passwordElement.type = "password";
 	}
 	// change icon by click
-	let iconElement = document.querySelector("#icon-element2");
-	if (iconElement.classList.contains("bi-eye-slash-fill")) {
-	  iconElement.classList.remove("bi-eye-slash-fill");
-	  iconElement.classList.add("bi-eye-fill");
-	} else {
-	  iconElement.classList.remove("bi-eye-fill");
-	  iconElement.classList.add("bi-eye-slash-fill");
-	}
+	let iconElement2 = document.querySelector("#icon-element2");
+	if (iconElement2.classList.contains("bi-eye-slash-fill")) {
+		iconElement2.classList.remove("bi-eye-slash-fill");
+		iconElement2.classList.add("bi-eye-fill");
+	  } else {
+		iconElement2.classList.remove("bi-eye-fill");
+		iconElement2.classList.add("bi-eye-slash-fill");
+	  }
   }
-  
