@@ -12,17 +12,17 @@ $(function() {
 
 });
 
-document.getElementById("icon-element").addEventListener("click", toggleIcon);
+document.querySelector("#icon-element").addEventListener("click", toggleIcon);
 function toggleIcon() {
 	// show password by click
-	const passwordElement = document.getElementById("password");
+	let passwordElement = document.querySelector("#password");
 	if (passwordElement.type === "password") {
 				  passwordElement.type = "text";
 	} else {
 				  passwordElement.type = "password";
 	}
 	// change icon by click
-	const iconElement = document.getElementById("icon-element");
+	let iconElement = document.querySelector("#icon-element");
 	if (iconElement.classList.contains("bi-eye-slash-fill")) {
 	  iconElement.classList.remove("bi-eye-slash-fill");
 	  iconElement.classList.add("bi-eye-fill");
@@ -31,3 +31,24 @@ function toggleIcon() {
 	  iconElement.classList.add("bi-eye-slash-fill");
 	}
   }
+// write function for re password input eye icon
+document.querySelector("#icon-element2").addEventListener("click", toggleIcon2);
+function toggleIcon2() {
+	// show password by click
+	let passwordElement = document.querySelector("#re-password");
+	if (passwordElement.type === "password") {
+				  passwordElement.type = "text";
+	} else {
+				  passwordElement.type = "password";
+	}
+	// change icon by click
+	let iconElement = document.querySelector("#icon-element2");
+	if (iconElement.classList.contains("bi-eye-slash-fill")) {
+	  iconElement.classList.remove("bi-eye-slash-fill");
+	  iconElement.classList.add("bi-eye-fill");
+	} else {
+	  iconElement.classList.remove("bi-eye-fill");
+	  iconElement.classList.add("bi-eye-slash-fill");
+	}
+  }
+  

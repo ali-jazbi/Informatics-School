@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="./font/icomoon/style.css">
         <!-- Costomized Styles -->    
         <link rel="stylesheet" href="./styles/style.css">
-        <link rel="stylesheet" href="./styles/login.css">
         <title>ورود</title>
     </head>
     <body>
@@ -56,7 +55,18 @@
             </g>
             </svg>
         </div>
-        <main>
+        <!--NOTE Back to top button -->
+        <a href="#">
+            <button
+            type="button"
+            class="btn btn-danger btn-floating btn-lg"
+            id="btn-back-to-top"
+            >
+            <i class="bi bi-arrow-up"></i>
+            </button>
+        </a>
+
+        <main class="Sign-Pages">
             <header>     
                 <!-- SECTION PC NAVBAR -->
                 <nav id="navbar_top" class="pc-navbar d-none d-lg-flex navbar navbar-expand-lg">
@@ -424,16 +434,7 @@
                 </div>
             </header>
             
-            <!--NOTE Back to top button -->
-            <a href="#">
-                <button
-                type="button"
-                class="btn btn-danger btn-floating btn-lg"
-                id="btn-back-to-top"
-                >
-                <i class="bi bi-arrow-up"></i>
-                </button>
-            </a>
+            
             <!-- SECTION login card -->
             <article dir="ltr">
                 <div class="content">
