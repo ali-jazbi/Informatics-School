@@ -74,7 +74,7 @@
                     <div class="d-flex align-items-center">
                             <a class="navbar-brand" href="./index.html"><img src="./icon/logo-no-background.png" alt=""></a>
                             <ul class="navbar-nav ms-auto d-flex align-items-center">
-                            <li class="nav-item"><a style="color:black" class="nav-link" href="#">خانه</a></li>
+                            <li class="nav-item"><a style="color:black" class="nav-link" href="./index.html">خانه</a></li>
                             <li onmouseover="hoverMENU()" onmouseout="unhoverMENU()" class="nav-item hoverFullMenu">
                                 <div  class="full-drop-menu">
                                 <div style="width:1100px;margin-top:45px;margin-left: 250px;" class="container-fluid">
@@ -251,14 +251,15 @@
                                 </div>
                                 </div>
                                 <span style="color:#303132be">موضوعات</span><i class="ms-2 bi bi-chevron-down"></i></li>
-                            <li class="nav-item"><a style="color:#303132be" class="nav-link" href="#">درباره ما</a></li>
+                            <li class="nav-item"><a style="color:#303132be" class="nav-link" href="./contact.html">ارتباط ما</a></li>
+                            <li class="nav-item"><a style="color:#303132be" class="nav-link" href="./about.html">درباره ما</a></li>
                             </ul> 
                     </div>
                     <div class="w-100 d-flex align-items-center">
                         <div class="switch-version-btn d-none d-lg-flex ms-auto">
-                            <button type="button">
+                            <!-- <button type="button">
                             <a href="#">نسخه هنرآموز</a><i class="fas fa-chalkboard-teacher"></i>
-                            </button>
+                            </button> -->
                         </div>
                         <div class="input-group d-none d-lg-flex">
                             <button type="button" data-bs-toggle="dropdown" aria-expanded="false" ><i class="bi bi-filter"></i></button>
@@ -316,10 +317,10 @@
                         </div>
                         <ul class="navbar-nav d-flex align-items-center">
                             <li style="border-left: 1px solid rgba(14, 14, 14, 0.308);width:30px;height:45px"><a class="nav-link" href="#"></a></li>
-                            <li><a class="nav-link" href="./login.html">
+                            <li><a class="nav-link" href="./login.html" target="_blank">
                             <button class="signIN">ورود</button>
                             </a></li>
-                            <li><a class="nav-link" href="#">
+                            <li><a class="nav-link" href="./register.html" target="_blank">
                             <button class="signUP">ثبت نام</button>
                             </a></li>
                         </ul>
@@ -345,19 +346,23 @@
                             </div>
                             </div>
                             <div class="logo-brand">
-                                <img src="./icon/logo-no-background.png" alt="">
+                                <a href="./index.html"><img src="./icon/logo-no-background.png" alt=""></a>
                             </div>
                         </div>
                     </div>      
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img width="100px" src="./icon/logo-no-background.png" alt=""></h5>
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                            <a href="./index.html">
+                                <img width="100px" src="./icon/logo-no-background.png" alt="">
+                            </a>
+                        </h5>                        
                         <button onclick="unhoverMENU()" type="button" class="btn-close me-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body w-100">
                         <div class="loginBTN">
-                            <button><a href="./login.html">ورود</a></button>
-                            <button><a href="#">ثبت نام</a></button>
+                        <button><a href="./login.html">ورود</a></button>
+                        <button><a href="#">ثبت نام</a></button>
                         </div>
                         <div class="dropdown-mobile">
                             <label for="touch"><span>کامپیوتر<i class="fas fa-chevron-down"></i></span></label>               
@@ -422,7 +427,9 @@
                         <ul>
                             <li><a href="#">نسخه هنرآموز<i style="color:#008545" class="ms-2 fas fa-chalkboard-teacher"></i></a></li>
                             <li><a href="#">مدیریت هنرستان<i style="color:#180439" class="ms-2 fas fa-user-tie"></i></a></li>
-                            <li><a href="#">درباره هنرستان<i style="color:#036572" class="ms-2 fas fa-school"></i></a></li>
+                            <li><a href="./about.html">درباره هنرستان<i style="color:#036572" class="ms-2 fas fa-school"></i></a></li>
+                            <li><a href="./contact.html">ارتباط با هنرستان<i style="color:#720356" class="ms-2 fas fa-address-book"></i></a></li>
+    
                         </ul>
                     </div>
                     </div>
