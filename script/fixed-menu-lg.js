@@ -19,12 +19,16 @@ window.addEventListener("scroll", function() {
   function hoverMENU(){
     document.querySelector(".header-shape").style.visibility="hidden";
     document.querySelector(".header-shape1").style.visibility="hidden";
+    document.querySelector(".scroll-progress").style.visibility="hidden";
+    document.querySelector(".scroll-progress").style.opacity="0";
     document.querySelector(".header-shape").style.opacity="0";
     document.querySelector(".header-shape1").style.opacity="0";
   }
   function unhoverMENU(){
     document.querySelector(".header-shape").style.visibility="visible";
     document.querySelector(".header-shape1").style.visibility="visible";
+    document.querySelector(".scroll-progress").style.visibility="visible";
+    document.querySelector(".scroll-progress").style.opacity="1";
     document.querySelector(".header-shape").style.opacity="1";
     document.querySelector(".header-shape1").style.opacity="1";
   }

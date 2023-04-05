@@ -40,6 +40,7 @@ body{
     width: 100%;
     z-index: 1000;
     margin-top: 70px;
+    transition: all .15s ease-in-out;
 }
 @media screen and (max-width: 768px){
     .scroll-progress{
