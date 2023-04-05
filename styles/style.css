@@ -665,7 +665,7 @@ body{
 .pc-navbar .nav-item{
     height: auto;
     display: flex;
-    width: 110px;
+    width: 95px;
     height: 40px;
     cursor: pointer;
     align-items: center;
@@ -1661,7 +1661,8 @@ body{
     opacity: 1;
 }
 .section-cards .cards-section-body .card-title{
-    font-size: 26px;
+    font-size: 25px;
+    white-space: nowrap;
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
@@ -1692,7 +1693,7 @@ body{
     align-items: center;
     padding: 10px 0px;
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
