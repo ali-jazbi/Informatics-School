@@ -1607,7 +1607,7 @@ body{
 .section-cards .cards-section-body .card{
     position: relative;
     width: 43vh;
-    height: 550px;
+    height: 450px;
     overflow: hidden;
     border-radius: 10px !important;
     cursor: pointer;
@@ -1630,6 +1630,10 @@ body{
 }
 .section-cards .cards-section-body .card-image-3{
     background-image:url('../images/job.jpg')
+}
+.section-cards .cards-section-body .card-image-4{
+    background-image:url('../images/Collaboration.jpg');
+    background-position: -280px center;
 }
 .section-cards .cards-section-body .card-shadow{
     position: absolute;
@@ -1733,7 +1737,7 @@ body{
     }
     .section-cards .cards-section-body .card{
         width: 300px;
-        height: 500px;
+        height: 400px;
     }
     .section-cards .cards-section-body .card-title{
         font-size: 25px;
