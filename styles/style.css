@@ -1820,7 +1820,12 @@ footer i:hover{
     color: #006936;
 }
 .footer-text{
-    color: #8996a0;
+    color: #8996a0 ;
+    text-decoration: none;
+    transition: .15s all ease-in-out;
+}
+footer .footer-text a{
+    color: #8996a0 ;
     text-decoration: none;
     transition: .15s all ease-in-out;
 }
