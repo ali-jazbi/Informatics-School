@@ -25,9 +25,6 @@ body {
   margin: 0;
   padding: 0;
 }
-.container{
-    width: 83%;
-}
 h1,
 .h1,
 h2,
@@ -384,7 +381,8 @@ HISTORY MISSION
     height: 160px;
 }
 .computer-logo img{
-    height: 90%;
+    width: 260px;
+    height: 150px;
 }
 /* ========================
 
@@ -416,40 +414,10 @@ HISTORY MISSION
 -----------------------------*/
 .counter {
   font-size: 60px;
-  line-height: 60px;
   font-weight: 700;
   line-height: 70px;
   margin: 10px 0px;
   color: rgb(5, 146, 59);
-}
-
-.counter-stat i {
-  font-size: 40px;
-  color: #fff;
-  margin-right: 10px;
-}
-
-.counter-stat h5 {
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.counter-block span {
-  font-size: 30px;
-}
-
-#counter .dark-overlay {
-  background: #000;
-  opacity: 0.95;
-}
-
-#counter {
-  background: url("../images/banner/pattern-3.png") fixed 50% 50%;
-  position: relative;
-  background-size: cover;
-  padding-top: 87px;
-  padding-bottom: 95px;
 }
 footer{
     margin-top: auto;
@@ -491,9 +459,9 @@ footer{
   /*--------------
      COUNTER
     ----------------*/
-  .counter-stat {
-    margin-bottom: 30px;
-    text-align: center;
+  .counter{
+    font-size: 40px;
+    line-height: 50px;
   }
 }
 /*Small devices (landscape phones, 576px and up)*/
@@ -576,11 +544,5 @@ footer{
   .testimonial-content {
     padding: 10px;
   }
-  /*--------------
-     COUNTER
-    ----------------*/
-  .counter-stat {
-    margin-bottom: 30px;
-    text-align: center;
-  }
+
 }
