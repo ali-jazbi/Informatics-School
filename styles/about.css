@@ -482,6 +482,7 @@ footer{
   #about {
     padding-bottom: 40px;
   }
+
 }
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
@@ -511,7 +512,7 @@ footer{
     line-height: 37px;
   }
   .banner-content p {
-    font-size: 16px;
+    font-size: 13px;
   }
   /*----------------
      ABOUT
@@ -544,5 +545,26 @@ footer{
   .testimonial-content {
     padding: 10px;
   }
-
+  .features-section h3{
+    font-size: 19px;
+  }
+  .features-section p , .about-list2{
+    font-size: 12px;
+  }
+  .features-section span{
+    font-size: 16px;
+  }
+  .flex-grow-1{
+    padding-left: 10px;
+  }
+  .flex-grow-1 p{
+    display: none;
+  }
+  .flex-grow-1 h4{
+    font-size: 15px;
+    text-align: justify;
+  }
+  .flex-shrink-0 img{
+    height: 120px;
+  }
 }
