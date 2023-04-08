@@ -91,7 +91,9 @@ h6 {
   font-size: 14px;
   line-height: 26px;
 }
-
+.mobile-navbar {
+  line-height: normal;
+}
 .f-color {
   color: rgb(5, 146, 59);
 }
