@@ -1783,6 +1783,91 @@ body{
     }
 }
 
+/* NOTE Other Pages Banner  */
+/* =======================================
+INner Pages
+=========================================*/
+
+#page-banner {
+    position: relative;
+    padding: 60px 0px 80px;
+}
+
+.page-banner-area{
+    background: url("../images/banner/image.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+.banner-area .content-padding {
+padding: 250px 0px 180px;
+}
+
+.content-padding {
+padding: 180px 0px 80px;
+}
+.banner-content {
+padding-right: 30px;
+}
+
+.banner-content .btn {
+margin-top: 15px;
+}
+
+.banner-content .banner-title {
+color: #fff;
+font-weight: 700;
+line-height: 50px;
+}
+
+.banner-content .subtitle {
+color: #fff;
+background: rgb(5, 146, 59);
+display: inline-block;
+padding: 3px 8px;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+
+.subtitle {
+color: rgb(5, 146, 59);
+}
+
+.banner-content p {
+margin: 20px 0px;
+color: #e6e6e6;
+font-size: 18px;
+line-height: 30px;
+}
+
+.banner-content .btn {
+margin-right: 12px;
+}
+.banner-links{
+color: #a5a2a2;
+font-weight: normal;
+margin-top: -40px;
+}
+.banner-links a{
+color: #cccccc;
+font-weight: bold;
+}
+.banner-links a:hover{
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 575.98px) {
+    /*--------------------
+    BANNER
+    -----------------*/
+    .banner-content .banner-title {
+        line-height: 37px;
+    }
+    .banner-content p {
+        font-size: 13px;
+    }
+    /* /*---------------- */
+    .banner-links{
+        font-size: 13px;
+    }
+}
 
 /* NOTE Footer*/
 footer{

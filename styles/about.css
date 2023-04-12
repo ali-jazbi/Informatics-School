@@ -151,51 +151,6 @@ h5.subtitle {
 /*------------------------------------
  BANNER AREA
 ----------------------------------*/
-.banner-area .content-padding {
-  padding: 250px 0px 180px;
-}
-
-.content-padding {
-  padding: 180px 0px 80px;
-}
-.banner-content {
-  padding-right: 30px;
-}
-
-.banner-content .btn {
-  margin-top: 15px;
-}
-
-.banner-content .banner-title {
-  color: #fff;
-  font-weight: 700;
-  line-height: 50px;
-}
-
-.banner-content .subtitle {
-  color: #fff;
-  background: rgb(5, 146, 59);
-  display: inline-block;
-  padding: 3px 8px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.subtitle {
-  color: rgb(5, 146, 59);
-}
-
-.banner-content p {
-  margin: 20px 0px;
-  color: #eee;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.banner-content .btn {
-  margin-right: 12px;
-}
-
 .btn-sm {
   padding: 10px 30px;
 }
@@ -221,20 +176,6 @@ h5.subtitle {
 .section-heading h2 {
   margin-bottom: 20px;
   font-weight: 400;
-}
-
-/* =======================================
-INner Pages
-=========================================*/
-
-#page-banner {
-  position: relative;
-  padding: 60px 0px 80px;
-}
-
-.page-banner-area{
-  background: url("../images/banner/image.jpg") no-repeat 50% 50%;
-  background-size: cover;
 }
 
 /*-------------------- ------------
@@ -507,16 +448,6 @@ footer{
     font-size: 32px;
     line-height: 36px;
   }
-  /*--------------------
-     BANNER
-    -----------------*/
-  .banner-content .banner-title {
-    line-height: 37px;
-  }
-  .banner-content p {
-    font-size: 13px;
-  }
-  /*----------------
      ABOUT
     ----------------*/
   .about-list li {
