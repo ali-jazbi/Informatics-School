@@ -1623,19 +1623,6 @@ body{
     background-position: center;
     transition: all 0.3s ease;
 }
-.section-cards .cards-section-body .card-image-1{
-    background-image:url('../images/support.jpg')
-}
-.section-cards .cards-section-body .card-image-2{
-    background-image:url('../images/Technology.jpg')
-}
-.section-cards .cards-section-body .card-image-3{
-    background-image:url('../images/job.jpg')
-}
-.section-cards .cards-section-body .card-image-4{
-    background-image:url('../images/Collaboration.jpg');
-    background-position: -280px center;
-}
 .section-cards .cards-section-body .card-shadow{
     position: absolute;
     bottom: 0;
@@ -1794,7 +1781,6 @@ INner Pages
 }
 
 .page-banner-area{
-    background: url("../images/banner/image.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 .banner-area .content-padding {
