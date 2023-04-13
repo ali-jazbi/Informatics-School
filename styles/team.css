@@ -7,6 +7,41 @@ text-align: center;
 color: #000000;
 margin: 4rem 0 3rem 0;
 }
+        
+.divider-h1 {								/* minor cosmetics */
+    display: table; 
+    font-size: 24px; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;	
+    direction: ltr;				/* spacing above/below */
+}
+.divider-h1 span { display: table-cell; position: relative; }
+.divider-h1 span:first-child, .divider-h1 span:last-child {
+    width: 43%;
+    top: 13px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider-h1 span:first-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#00000042));
+    background-image: -webkit-linear-gradient(180deg, transparent, #00000042);
+    background-image: -moz-linear-gradient(180deg, transparent, #00000042);
+    background-image: -o-linear-gradient(180deg, transparent, #00000042);
+    background-image: linear-gradient(90deg, transparent, #00000042);
+}
+.divider-h1 span:nth-child(2) {
+    color: #000; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider-h1 span:last-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00000042), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, #00000042, transparent);
+    background-image: -moz-linear-gradient(180deg, #00000042, transparent);
+    background-image: -o-linear-gradient(180deg, #00000042, transparent);
+    background-image: linear-gradient(90deg, #00000042, transparent);
+}
 .teachers-section .container{
     width: 85% !important;
 }
@@ -111,12 +146,14 @@ justify-content: center;
 border: none;
 outline: none;
 padding: 10px 26px;
-background-color: #eeeeee00;
+margin: 5px;
+background-color: #0a734703;
+transition: all 0.2s;
 cursor: pointer;
 }
 
 .teachers-section .btn:hover {
-background-color: #ddddddb6;
+background-color: #0a734714;
 }
 
 .teachers-section .btn.active {
@@ -166,4 +203,15 @@ animation: .6s zoom-in;
             transform: scale(1);
     opacity: 1;
 }
+}
+
+@media (max-width:762px){
+    .divider-h1 span:first-child, .divider-h1 span:last-child {
+        width: 23%;
+    }
+    /* make buttons smaller */
+    .teachers-section .btn {
+        padding: 8px 13px;
+        margin: 10px;
+    }
 }
