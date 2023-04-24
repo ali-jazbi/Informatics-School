@@ -1894,8 +1894,8 @@ footer i img{
     margin-top: 25px;
 }
 footer .d-md-none i img{
-    padding-bottom: 5.9px;
-    margin-top: 1px;
+    padding-bottom: 0px;
+    margin-top: -1.7px;
 }
 .footer-text{
     color: #8996a0 ;
