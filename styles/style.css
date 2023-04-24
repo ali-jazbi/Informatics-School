@@ -1885,14 +1885,23 @@ footer i{
     font-size: 22px;
     color: #8996a0;
     transition: .15s all ease-in-out;
+
 }
-footer i:hover{
-    color: #006936;
+footer i img{
+    width: 30px;
+    height: 30px;
+    padding-bottom: 6.5px;
+    margin-top: 25px;
+}
+footer .d-md-none i img{
+    padding-bottom: 5.9px;
+    margin-top: 1.5px;
 }
 .footer-text{
     color: #8996a0 ;
     text-decoration: none;
     transition: .15s all ease-in-out;
+    white-space: nowrap;
 }
 footer .footer-text a{
     color: #8996a0 ;
@@ -1903,7 +1912,7 @@ footer a:hover{
     color: #006936;
 }
 .font-size-18{
-    font-size: 18px;
+    font-size: 17px;
 }
 @media (max-width: 767px) {
     footer .row {
@@ -1930,5 +1939,12 @@ footer a:hover{
     }
     footer .text-md-center p{
         font-size: 9px;
+    }
+    footer h5{
+        margin-top: 20px;
+        font-size: 19px;
+    }
+    .font-size-18{
+        font-size: 16px;
     }
 }
