@@ -85,7 +85,7 @@ transition: .3s all ease-in-out;
 }
 .teachers-section .filter-image img{
     width: 100%;
-    height: 260px;
+    height: 265px;
     transition: all .3s ease-in-out;
 }
 .teachers-section .filterDiv:hover{
