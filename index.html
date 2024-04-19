@@ -81,12 +81,16 @@
       <header>     
           <!-- SECTION PC NAVBAR -->
           <nav id="navbar_top" class="pc-navbar d-none d-lg-flex navbar navbar-expand-lg">
-            <div class="container-fluid w-100 d-flex justify-content-center">
-                <div class="d-flex align-items-center">
-                      <a class="navbar-brand" href="#"><img src="./icon/logo-no-background.png" alt=""></a>
-                      <ul class="navbar-nav ms-auto d-flex align-items-center">
-                        <li class="nav-item"><a style="color:black" class="nav-link" href="#">خانه</a></li>
-                        <li onmouseover="hoverMENU()" onmouseout="unhoverMENU()" class="nav-item hoverFullMenu">
+            <div class="container d-flex justify-content-between">
+              <a class="navbar-brand" href="#">
+                <img src="./icon/logo-no-background.png" alt="">
+              </a>
+                <div class="d-flex w-100 align-items-center">
+                      <ul class="navbar-nav d-flex align-items-center justify-content-center w-100">
+                        <li class="nav-item mx-3 ms-5">
+                          <a style="color:black" class="nav-link" href="#">خانه</a>
+                        </li>
+                        <li onmouseover="hoverMENU()" onmouseout="unhoverMENU()" class="nav-item mx-3 hoverFullMenu">
                           <div  class="full-drop-menu">
                             <div style="width:1100px;margin-top:45px;margin-left: 250px;" class="container-fluid">
                                 <div class="row w-100">
@@ -262,18 +266,12 @@
                             </div>
                           </div>
                           <span style="color:#303132be">موضوعات</span><i class="ms-2 bi bi-chevron-down"></i></li>
-                          <li class="nav-item"><a style="color:#303132be" class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"> ثبت نام </a></li>
-                        <li class="nav-item"><a style="color:#303132be" class="nav-link" href="./contact.html">ارتباط ما</a></li>
+                        <li class="nav-item mx-3"><a style="color:#303132be" class="nav-link" href="./contact.html">ارتباط ما</a></li>
                         <li class="nav-item"><a style="color:#303132be" class="nav-link" href="./about.html">درباره ما</a></li>
                       </ul> 
                 </div>
-                <div class="w-100 d-flex align-items-center">
-                    <div class="switch-version-btn d-none d-lg-flex ms-auto">
-                      <!-- <button type="button">
-                        <a href="#">نسخه هنرآموز</a><i class="fas fa-chalkboard-teacher"></i>
-                      </button> -->
-                    </div>
-                    <div class="input-group d-none d-lg-flex">
+                <div class="w-25 d-flex justify-content-end">
+                    <!-- <div class="input-group d-none d-lg-flex">
                       <button type="button" aria-expanded="false" ><i class="bi bi-filter"></i></button>
                       <ul dir="ltr" class="dropdown-menu">
                         <li class="dropend-item">
@@ -326,7 +324,7 @@
                       <span class="input-group-text -0" id="search-addon">
                         <i class="bi bi-search"></i>
                       </span>
-                    </div>
+                    </div> -->
                     <ul class="navbar-nav d-flex align-items-center">
                       <li style="border-left: 1px solid rgba(14, 14, 14, 0.308);width:30px;height:45px"><a class="nav-link" href="#"></a></li>
                       <li><a class="nav-link" href="./login.html" target="_blank">
@@ -337,65 +335,8 @@
                       </a></li>
                     </ul>
                 </div>
-                <div class="collapse navbar-collapse" id="main_nav">
-                </div>
             </div>
           </nav>
-          <!-- NOTE Registration Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">پیش ثبت نام</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <h5 class="text-center">اطلاعات هنرجو</h5>
-                  <hr class="mb-4">
-                  <form action="#">
-                    <div class="row">
-                        <label for="fname">نام:</label>
-                        <input type="text" id="fname" name="fname">
-                    </div>
-                    <div class="row">
-                        <label for="lname">نام خانوادگی:</label>
-                        <input type="text" id="lname" name="lname">
-                    </div>
-                    <div class="row">
-                        <label for="ssn">شماره ملی:</label>
-                        <input type="text" id="ssn" name="ssn">
-                    </div>
-                    <div class="row">
-                        <label for="birthdate">تاریخ تولد:</label>
-                        <input type="date" id="birthdate" name="birthdate">
-                    </div>
-                    <div class="row">
-                        <label for="gender">جنسیت:</label>
-                        <select id="gender" name="gender">
-                            <option value="">انتخاب کنید</option>
-                            <option value="male">مرد</option>
-                            <option value="female">زن</option>
-                        </select>
-                    </div>
-                    <div class="row">
-                        <label for="ethnicity">رشته:</label>
-                        <select id="ethnicity" name="ethnicity">
-                            <option value="">انتخاب کنید</option>
-                            <option value="persian">کامپیوتر</option>
-                            <option value="kurd">حسابداری</option>
-                            <option value="azari">معماری</option>
-                            <option value="other">سایر</option>
-                        </select>
-                    </div>
-                </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
-                  <button type="button" class="btn btn-success">ثبت اطلاعات</button>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- SECTION Mobile NAVBAR -->
           <nav class="mobile-navbar d-flex d-lg-none">
               <div class="container">
