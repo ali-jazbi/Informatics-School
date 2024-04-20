@@ -1,8 +1,15 @@
-
+.header{
+  padding-top:unset !important;
+  width: unset !important;
+  height: unset !important;
+}
+.example1::placeholder{
+  color: #b3b3b3;
+  font-size: 12px;
+}
 /* NOTE Login & Register Stye */
 
 .Sign-Pages article{
-    padding-top: 20px;
     width: 100%;
     height: 550px;
     z-index: -2;  
@@ -49,12 +56,13 @@
         .Sign-Pages .content .contents, .content .bg {
         width: 100%; } }
     .Sign-Pages .content .contents .form-group, .content .bg .form-group {
+        width: 50%;
         overflow: hidden;
         margin-bottom: 0;
         padding: 15px 15px;
         border-bottom: none;
         position: relative;
-        background: #d7ffec2a;
+        background: #d7feff3f;
         border-bottom: 1px solid #e6edf1;
     }
     .Sign-Pages .eye-icon{
@@ -100,7 +108,8 @@
         border: none;
         padding: 0;
         font-size: 16px;
-        border-radius: 0; }
+        border-radius: 0; 
+      }
         .Sign-Pages .content .contents .form-control:active, .Sign-Pages .content .contents .form-control:focus, .Sign-Pages .content .bg .form-control:active, .Sign-Pages .content .bg .form-control:focus {
         outline: none;
         -webkit-box-shadow: none;
@@ -255,12 +264,11 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 17px;
-    padding: 7px;
+    padding: 8px;
     width: 100%;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
     }
     
     .Sign-Pages article .signIN span {
@@ -322,6 +330,10 @@
     }
     .Sign-Pages .register a{
         border-radius: 0;
+        text-decoration: none;
+    }
+    .Sign-Pages .register a:nth-child(2):hover{
+      text-decoration: underline !important;
     }
     .Sign-Pages .register button{
         color: #616161;
