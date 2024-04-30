@@ -10,9 +10,13 @@
 }
 
 .videos-section .list--list-item {
+  width: 30%;
+  height: 45vh;
+  padding: 10px 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #cccccc;
+  box-shadow: rgba(193, 222, 208, 0.345) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 .videos-section .list--list-item:last-child {
   border-bottom: 0;
