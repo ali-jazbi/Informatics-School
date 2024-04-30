@@ -400,101 +400,124 @@
                 <div class="row">
                   <div id="users" class="col-lg-12">
                     <div class="row">
-                      <div class="col-lg-4">
+                      <div class="col-md-4">
                         <h4>جست و جوی ویدیو</h4>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-md-4 d-none d-md-block">
                         <h4>رشته</h4>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-md-4 d-none d-md-block">
                         <h4>پایه تحصیلی</h4>
                       </div>
                     </div>
                     <div class="filter-group row mt-3">
-                      <div class="form-group col-xs-12 col-sm-12 col-md-4">
-                        <input type="text" class="search form-control w-75" placeholder="عنوان ویدیو را بنویسید ">
+                      <div class="col-12 col-md-4 mb-2 mb-md-0">
+                        <form class="form-group w-75">
+                          <button>
+                              <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                                  <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                              </svg>
+                          </button>
+                          <input class="input search" placeholder="عنوان ویدیو را بنویسید" required="" type="text">
+                          <button class="reset" type="reset">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                              </svg>
+                          </button>
+                        </form>
                       </div>
-                      <div class="form-group col-sm-12 col-md-4">
+                      <div class="form-group col-8 col-md-4">
+                        <h4 class="d-md-none mt-3 mb-4">رشته</h4>
                         <div class="radio-inline">
                           <label>
-                            <input class="filter-all" type="radio" value="all" name="Field" id="Field-all" checked /> همه
+                            <input class="filter-all" type="radio" value="all" name="Field" id="Field-all" checked />
+                            <span>همه</span>
                           </label>
                         </div>
                         <div class="radio-inline mt-2">
                           <label>
-                            <input class="filter" type="radio" value="کامپیوتر" name="Field" id="Field-computer" /> کامپیوتر
+                            <input class="filter" type="radio" value="کامپیوتر" name="Field" id="Field-computer" />
+                            <span>کامپیوتر</span>
                           </label>
                           <label>
-                            <input class="filter" type="radio" value="حسابداری" name="Field" id="Field-Accounting" /> حسابداری
+                            <input class="filter" type="radio" value="حسابداری" name="Field" id="Field-Accounting" />
+                            <span>حسابداری</span>
                           </label>
                         </div>
                         <div class="radio-inline mt-2">
-                          <label>
-                            <input class="filter" type="radio" value="انیمیشن سازی" name="Field" id="Field-animation" /> انیمیشن سازی
+                          <label class="mt-1 mt-md-0">
+                            <input class="filter" type="radio" value="نقشه کشی" name="Field" id="Field-cartography" />
+                            <span>نقشه کشی</span>
                           </label>
                           <label>
-                            <input class="filter" type="radio" value="معماری" name="Field" id="Field-architecture" /> معماری
+                            <input class="filter" type="radio" value="معماری" name="Field" id="Field-architecture" />
+                            <span>معماری</span>
                           </label>
-                          <label>
-                            <input class="filter" type="radio" value="نقشه کشی" name="Field" id="Field-cartography" /> نقشه کشی
+                          <label class="mt-2 mt-md-0">
+                            <input class="filter" type="radio" value="انیمیشن سازی" name="Field" id="Field-animation"/>
+                            <span>انیمیشن سازی</span>
                           </label>
                         </div>
                       </div>
-                      <div class="form-group col-xs-12 col-sm-12 col-md-4">
+                      <div class="form-group col-4 col-md-4">
+                      <h4 class="d-md-none mt-3 mb-4 ms-2 ms-md-0">پایه</h4>
                         <div class="radio-inline">
                           <label>
-                            <input class="filter" type="radio" value="دهم (۱۰)" name="grade" id="grade-all" /> دهم
+                            <input class="filter" type="radio" value="دهم (۱۰)" name="grade" id="grade-all" />
+                            <span>دهم</span>
                           </label>
                         </div>
-                        <div class="radio-inline mt-2">
+                        <div class="radio-inline mt-3 mt-md-2">
                           <label>
-                            <input class="filter" type="radio" value="یازدهم (۱۱)" name="grade" id="grade-street" /> یازدهم
+                            <input class="filter" type="radio" value="یازدهم (۱۱)" name="grade" id="grade-street" />
+                            <span>یازدهم</span>
                           </label>
                         </div>
-                        <div class="radio-inline mt-2">
+                        <div class="radio-inline mt-3 mt-md-2">
                           <label>
-                            <input class="filter" type="radio" value="دوازدهم (۱۲)" name="grade" id="grade-drive" /> دوازدهم
+                            <input class="filter" type="radio" value="دوازدهم (۱۲)" name="grade" id="grade-drive" />
+                            <span>دوازدهم</span>
                           </label>
                         </div>
                       </div>
-                      <div class="form-group col-xs-12 col-sm-12">
+                      <div class="form-group col-xs-12 col-sm-12 mt-4 mt-md-0">
                         <button class="btn btn-danger" onclick="resetList();">پاک کردن</button>
                       </div>
                     </div>
-                    <ul class="list row mt-5">
-                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="Accounting">
-                        <h3 class="name">حسابداری</h3>
-                        <p class="born">حسابداری</p>
+                    <ul class="list row mt-5 d-flex justify-content-evenly">
+                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="کامپیوتر">
+                        <h4 class="name h5 mb-4">ویدیو دانش فنی پایه </h4>
+                        <p class="born">کامپیوتر</p>
                         <p class="grade">دهم (۱۰)</p>
                       </li>
-                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="Accounting">
-                        <h3 class="name">Jonas</h3>
-                        <p class="born">1985</p>
+                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="حسابداری">
+                        <h4 class="name h5 mb-4">ویدیو مدیریت تولید </h4>
+                        <p class="born">حسابداری</p>
                         <p class="grade">یازدهم (۱۱)</p>
                       </li>
-                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="Accounting">
-                        <h3 class="name">Jonas</h3>
-                        <p class="born">1985</p>
+                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="انیمیشن سازی">
+                        <h4 class="name h5 mb-4">ویدیو  متحرک سازی رایانه ای </h4>
+                        <p class="born">انیمیشن سازی</p>
                         <p class="grade">دوازدهم (۱۲)</p>
                       </li>    
-                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="Accounting">
-                        <h3 class="name">Jonas</h3>
-                        <p class="born">1985</p>
+                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="معماری">
+                        <h4 class="name h5 mb-4">ویدیو تزیینات چوبی و پارچه ای </h4>
+                        <p class="born">معماری</p>
                         <p class="grade">دهم (۱۰)</p>
                       </li>
-                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="computer">
-                        <h3 class="name">Martina</h3>
-                        <p class="born">1986</p>
+                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="نقشه کشی">
+                        <h4 class="name h5 mb-4">ویدیو فناوری های نوین </h4>
+                        <p class="born">نقشه کشی</p>
                         <p class="grade">یازدهم (۱۱)</p>
                       </li>
-                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="Accounting">
-                        <h3 class="name">Gustaf</h3>
-                        <p class="born">1983</p>
+                      <li class="col-12 col-md-4 col-lg-3 list--list-item" data-Field="کامپیوتر">
+                        <h4 class="name h5 mb-4">ویدیو تجهیزات شبکه </h4>
+                        <p class="born">کامپیوتر</p>
                         <p class="grade">دوازدهم (۱۲)</p>
                       </li>
                     </ul>
                     <div class="no-result">نتیجه ای یافت نشد!</div>
-                    <h4>تغییر صفحات</h4>
+                    <h6 class="page-num ms-3 my-4">شماره صفحه</h6>
                     <ul class="pagination"></ul>
                   </div>
                 </div>

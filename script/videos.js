@@ -1,6 +1,6 @@
 var options = {
   valueNames: ["name", "born", "grade", { data: ["Field"] }],
-  page: 4,
+  page: 3,
   pagination: true,
 };
 var userList = new List("users", options);
@@ -48,8 +48,10 @@ $(function () {
   userList.on("updated", function (list) {
     if (list.matchingItems.length > 0) {
       $(".no-result").hide();
+      $(".page-num").show();
     } else {
       $(".no-result").show();
+      $(".page-num").hide();
     }
   });
 });
