@@ -1,0 +1,38 @@
+.videos-section .container {
+  padding-top: 100px;
+  margin-bottom: 30px;
+}
+
+.videos-section .list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.videos-section .list--list-item {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+.videos-section .list--list-item:last-child {
+  border-bottom: 0;
+  margin: 0;
+}
+
+.videos-section .no-result {
+  display: none;
+}
+.pagination{
+  font-size: 20px;
+  
+}
+.pagination a{
+  padding: 5px 15px;
+  margin: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(0, 133, 69, 0.5); /* Adjust the alpha channel for desired transparency */
+  backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(5px); /* For Safari compatibility */
+}

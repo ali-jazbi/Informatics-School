@@ -1,0 +1,484 @@
+{% load static %}
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+
+<title>{% block title %}{% endblock %}</title> 
+
+{% block meta %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Ali Jazbi">
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
+<meta http-equiv='pragma' content='no-cache'>
+<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+
+{% endblock %}
+
+{% block css %}{% endblock %}
+
+
+</head>
+
+<body>
+
+{% block menu %}
+
+<header>     
+    <!-- SECTION PC NAVBAR -->
+    <nav id="navbar_top" class="pc-navbar d-none d-lg-flex navbar navbar-expand-lg">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="/">
+          <img src="{{ informations.logo.url }}" alt="">
+        </a>
+          <div class="d-flex w-100 align-items-center">
+                <ul class="navbar-nav d-flex align-items-center justify-content-center w-100">
+                  <li class="nav-item mx-3 ms-5">
+                    <a style="color:black" class="nav-link" href="/">خانه</a>
+                  </li>
+                  <li onmouseover="hoverMENU()" onmouseout="unhoverMENU()" class="nav-item mx-3 hoverFullMenu">
+                    <div  class="full-drop-menu">
+                      <div style="width:1100px;margin-top:45px;margin-left: 250px;" class="container-fluid">
+                          <div class="row w-100">
+                              <div class="col-8">
+                                  <div class="row w-100">
+                                    <div class="col-4 d-flex flex-column">
+                                        <div class="boxLink">
+                                              <div class="row d-flex align-items-center h-100">
+                                                  <div class="col-2 d-flex justify-content-center">
+                                                      <img width="30px" src="./icon/navbar-icon/1svg.png" alt="">
+                                                    </div>
+                                                  <div dir="ltr" align="left" class="col-10">
+                                                      <div class="h6">Flexi</div>
+                                                      <span>A FREE Digital Tutor for Every Student</span>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2 d-flex justify-content-center">
+                                                  <img width="21px" src="./icon/navbar-icon/2.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">
+                                                    FlexBooks 2.0</div>
+                                                  <span>
+                                                    digital textbooks in a new, platform</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2  d-flex justify-content-center">
+                                                  <img width="21px" src="./icon/navbar-icon/3.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">FlexBooks</div>
+                                                  <span>
+                                                    Customizable, digital textbooks</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2  d-flex justify-content-center">
+                                                  <img width="30px" src="./icon/navbar-icon/4.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">Schools</div>
+                                                  <span>
+                                                    FlexBooks from schools and districts near you</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column">
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2">
+                                                  <img width="30px" src="./icon/navbar-icon/5.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">Study Guides</div>
+                                                  <span>
+                                                    Quick review with information for concept</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2">
+                                                  <img width="25px" src="./icon/navbar-icon/6.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">Adaptive Practice</div>
+                                                  <span>
+                                                    Building knowledge at each student’s skill level</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2">
+                                                  <img width="30px" src="./icon/navbar-icon/7.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">Simulations</div>
+                                                  <span>
+                                                    Interactive Physics & Chemistry Simulations</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2">
+                                                  <img width="30px" src="./icon/navbar-icon/8.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">PLIX</div>
+                                                  <span>
+                                                    Play. Learn. Interact. eXplore.</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 d-flex flex-column">
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2">
+                                                  <img width="25px" src="./icon/navbar-icon/9.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">CCSS Math</div>
+                                                  <span>
+                                                    Concepts and FlexBooks aligned to Common Core</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2">
+                                                  <img width="27px" src="./icon/navbar-icon/10.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">NGSS</div>
+                                                  <span>
+                                                    Concepts aligned to Next Generation Science</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2">
+                                                  <img width="30px" src="./icon/navbar-icon/11.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">Certified Educator</div>
+                                                  <span>
+                                                    Stand out as an educator Become CK-12 Certified</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="boxLink">
+                                          <div class="row d-flex align-items-center h-100">
+                                              <div class="col-2">
+                                                  <img width="30px" src="./icon/navbar-icon/12.png" alt="">
+                                                </div>
+                                              <div dir="ltr" align="left" class="col-10">
+                                                  <div class="h6">Webinars</div>
+                                                  <span>
+                                                    Live and archived sessions to learn</span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-4">
+                                  <div class="row">
+                                    <div class="col-6 fullnavbar-links">
+                                        <h5>منابع آموزشی</h5>
+                                        <a class="mt-3 fs-6 d-block" href="#">کتاب آموزشی</a>
+                                        <a class="mt-3 fs-6 d-block" href="#">ویدیو آموزشی</a>
+                                        <a class="mt-3 fs-6 d-block" href="#"> کلاس آنلاین</a>
+                                        <a class="mt-3 fs-6 d-block" href="#">مقالات آموزشی</a>
+                                    </div>
+                                    <div class="col-6">
+                                      <lottie-player src="{% static 'js/gif1.json' %}"  background="transparent"  speed="1"  style="width: 300px; height: 130%;" loop  autoplay></lottie-player>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <span style="color:#303132be">موضوعات</span><i class="ms-2 bi bi-chevron-down"></i></li>
+                  <li class="nav-item mx-3"><a style="color:#303132be" class="nav-link" href="/contact-us">ارتباط ما</a></li>
+                  <li class="nav-item"><a style="color:#303132be" class="nav-link" href="/about-us">درباره ما</a></li>
+                </ul> 
+          </div>
+          <div class="w-25 d-flex justify-content-end">
+              <!-- <div class="input-group d-none d-lg-flex">
+                <button type="button" aria-expanded="false" ><i class="bi bi-filter"></i></button>
+                <ul dir="ltr" class="dropdown-menu">
+                  <li class="dropend-item">
+                    <a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                      <i class="bi bi-chevron-left"></i><span class="bg-transparent">کامپیوتر</span>
+                    </a>
+                    <div class="dropend-box">
+                      <ul>
+                        <li class="mt-"><a href="#">پایه دهم</a></li>
+                        <li><a href="#">پایه یازدهم</a></li>
+                        <li><a href="#">پایه دوازدهم</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropend-item"><a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        <i class="bi bi-chevron-left"></i><span class="bg-transparent">انیمیشن</span>
+                      </a>
+                      <div style="top:54px" class="dropend-box">
+                        <ul>
+                          <li class="mt-"><a href="#">پایه دهم</a></li>
+                          <li><a href="#">پایه یازدهم</a></li>
+                          <li><a href="#">پایه دوازدهم</a></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="dropend-item"><a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        <i class="bi bi-chevron-left"></i><span class="bg-transparent">نقشه کشی</span>
+                      </a>
+                      <div style="top:105px" class="dropend-box">
+                      <ul>
+                        <li class="mt-"><a href="#">پایه دهم</a></li>
+                        <li><a href="#">پایه یازدهم</a></li>
+                        <li><a href="#">پایه دوازدهم</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropend-item"><a class="dropdown-item d-flex justify-content-between align-items-center" href="#">
+                        <i class="bi bi-chevron-left"></i><span class="bg-transparent">حسابداری</span>
+                      </a>
+                      <div style="top:156px" class="dropend-box">
+                      <ul>
+                        <li class="mt-"><a href="#">پایه دهم</a></li>
+                        <li><a href="#">پایه یازدهم</a></li>
+                        <li><a href="#">پایه دوازدهم</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+                <input type="search" class="form-control" placeholder="چه چیزی میخواهید بیاموزید؟" aria-label="Search" aria-describedby="search-addon" />
+                <span class="input-group-text -0" id="search-addon">
+                  <i class="bi bi-search"></i>
+                </span>
+              </div> -->
+              {% if request.user.is_authenticated == False %}
+              <ul class="navbar-nav d-flex align-items-center">
+                <li style="border-left: 1px solid rgba(14, 14, 14, 0.308);width:30px;height:45px"><a class="nav-link" href="#"></a></li>
+                <li><a class="nav-link" href="/login" target="_blank">
+                  <button class="signIN">ورود</button>
+                </a></li>
+                <li><a class="nav-link" href="/register" target="_blank">
+                  <button class="signUP">عضویت</button>
+                </a></li>
+              </ul>
+              {% else %}
+              <ul class="navbar-nav d-flex align-items-center">
+                <li style="border-left: 1px solid rgba(14, 14, 14, 0.308);width:30px;height:45px"><a class="nav-link" href="#"></a></li>
+                <li><a class="nav-link" href="/logout">
+                  <button style="background-color:red;color:white;" class="signIN">خروج</button>
+                </a></li>
+                <li><a class="nav-link" href="#">
+                  <button class="signUP">پنل کاربری</button>
+                </a></li>
+              </ul>
+              {% endif %}
+          </div>
+      </div>
+    </nav>
+    <!-- SECTION Mobile NAVBAR -->
+    <nav class="mobile-navbar d-flex d-lg-none">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="row d-flex align-items-center">
+                  <button onclick="hoverMENU()" class="btn-open" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <i class="bi bi-list"></i>
+                  </button>
+                </div>
+                <div class="logo-brand">
+                    <a href="/"><img src="{{ informations.logo.url }}" alt=""></a>
+                </div>
+            </div>
+        </div>      
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+              <a href="/"><h5 class="offcanvas-title" id="offcanvasExampleLabel"><img width="100px" src="{{ informations.logo.url }}" alt=""></h5></a>
+              <button onclick="unhoverMENU()" type="button" class="btn-close me-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body w-100">
+            <div class="loginBTN">
+              <button><a href="/login">ورود</a></button>
+              <button><a href="/register">ثبت نام</a></button>
+            </div>
+            <div class="dropdown-mobile">
+                <label for="touch"><span>کامپیوتر<i class="fas fa-chevron-down"></i></span></label>               
+                <input type="checkbox" id="touch"> 
+                <ul class="slide">
+                  <li><a href="#">دهم</a></li> 
+                  <li><a href="#">یازدهم</a></li>
+                  <li><a href="#">دوازدهم</a></li>
+                  <li><a style="color:#008545" href="#">درباره این رشته بیشتر بدانید!</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-mobile">
+                <label for="touch1"><span>انیمیشن<i class="fas fa-chevron-down"></i></span></label>               
+                <input type="checkbox" id="touch1"> 
+                <ul class="slide">
+                  <li><a href="#">دهم</a></li> 
+                  <li><a href="#">یازدهم</a></li>
+                  <li><a href="#">دوازدهم</a></li>
+                  <li><a style="color:#008545" href="#">درباره این رشته بیشتر بدانید!</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-mobile">
+                <label for="touch2"><span>نقشه کشی<i class="fas fa-chevron-down"></i></span></label>               
+                <input type="checkbox" id="touch2"> 
+                <ul class="slide">
+                  <li><a href="#">دهم</a></li> 
+                  <li><a href="#">یازدهم</a></li>
+                  <li><a href="#">دوازدهم</a></li>
+                  <li><a style="color:#008545" href="#">درباره این رشته بیشتر بدانید!</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-mobile">
+                <label for="touch3"><span>حسابداری<i class="fas fa-chevron-down"></i></span></label>               
+                <input type="checkbox" id="touch3"> 
+                <ul class="slide">
+                  <li><a href="#">دهم</a></li> 
+                  <li><a href="#">یازدهم</a></li>
+                  <li><a href="#">دوازدهم</a></li>
+                  <li><a style="color:#008545" href="#">درباره این رشته بیشتر بدانید!</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-mobile">
+              <label for="touch4"><span>امور اداری<i class="fas fa-chevron-down"></i></span></label>               
+              <input type="checkbox" id="touch4"> 
+              <ul class="slide">
+                <li><a href="#">دهم</a></li> 
+                <li><a href="#">یازدهم</a></li>
+                <li><a href="#">دوازدهم</a></li>
+                <li><a style="color:#008545" href="#">درباره این بخش بیشتر بدانید!</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-mobile">
+              <label for="touch5"><span>امور آموزشی<i class="fas fa-chevron-down"></i></span></label>               
+              <input type="checkbox" id="touch5"> 
+              <ul class="slide">
+                <li><a href="#">دهم</a></li> 
+                <li><a href="#">یازدهم</a></li>
+                <li><a href="#">دوازدهم</a></li>
+                <li><a style="color:#008545" href="#">درباره این بخش بیشتر بدانید!</a></li>
+              </ul>
+            </div>
+            <ul>
+                <li><a href="#">نسخه هنرآموز<i style="color:#008545" class="ms-2 fas fa-chalkboard-teacher"></i></a></li>
+                <li><a href="/admin">مدیریت هنرستان<i style="color:#180439" class="ms-2 fas fa-user-tie"></i></a></li>
+                <li><a href="/about-us">درباره هنرستان<i style="color:#036572" class="ms-2 fas fa-school"></i></a></li>
+                <li><a href="/contact-us">ارتباط با هنرستان<i style="color:#720356" class="ms-2 fas fa-address-book"></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="scroll-progress">
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+</header>
+
+<a href="#">
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+  <i class="bi bi-arrow-up"></i>
+  </button>
+</a>
+
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+{% block footer %}
+
+<footer class="main-footer bg-dark text-white">
+    <div class="container d-flex flex-column align-items-center">
+      <div class="row pt-5">
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <h5 style="color: white;font-size: 20px;" class="font-weight-bold">هنرستان</h5>
+          <ul class="list-unstyled text-center">
+            <li class="mt-3"><a class="footer-text font-size-18" href="/about-us">درباره ما</a></li>
+            <li class="mt-2"><a class="footer-text font-size-18" href="/contact-us">تماس با ما</a></li>
+            <li class="mt-2"><a class="footer-text font-size-18" href="/team">کادر هنرستان</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <h5 style="color: white;font-size: 20px;" class="font-weight-bold">منابع</h5>
+          <ul class="list-unstyled text-center">
+            <li class="mt-3"><a class="footer-text font-size-18" href="http://chap.sch.ir/">کتب درسی</a></li>
+            <li class="mt-2"><a class="footer-text font-size-18" href="https://www.roshd.ir/">
+              شبکه ملی رشد</a></li>
+              <li class="mt-2"><a class="footer-text font-size-18" href="https://medu.gov.ir/">وزارت آموزش و پرورش</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 d-flex flex-column align-items-center">
+          <h5 style="color: white;font-size: 20px;" class="font-weight-bold">آموزش</h5>
+          <ul class="list-unstyled text-center">
+            <li class="mt-3"><a class="footer-text font-size-18" href="https://7ganj.ir/">کتابخانه مجازی</a></li>
+            <li class="mt-2"><a class="footer-text font-size-18" href="https://www.tebyan.net/">موسسه فرهنگی تبیان</a></li>
+            <li class="mt-2"><a class="footer-text font-size-18" href="https://bpj.iau.ir/">باشگاه پژوهشگران جوان</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-4 d-none d-md-block">
+          <div class="d-flex justify-content-center align-items-end">
+            <a href="{{ informations.aparat }}">
+              <i style="height:30px;display:flex;align-items:center">
+                <img src="{% static 'img/aparat-custom.svg' %}" alt="">
+              </i>
+            </a>
+            <a href="{{ informations.telegram }}"><i class="fab fa-telegram mr-3"></i></a>
+            <a href="{{ informations.instagram }}"><i class="fab fa-instagram mr-3"></i></a>
+            <a href="{{ informations.youtube }}"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="/">
+            <img src="{% static 'img/logo-no-background-1.png' %}" alt="Informatics Logo">
+          </a>
+        </div>
+        <div class="d-md-none">
+          <div class="d-flex justify-content-center mb-3">
+            <a href="{{ informations.aparat }}"><i class="fab"><img src="{% static 'img/aparat.png' %}" alt=""></i></a>
+            <a href="{{ informations.telegram }}"><i class="fab fa-telegram fa-2x mr-3"></i></a>
+            <a href="{{ informations.instagram }}"><i class="fab fa-instagram fa-2x mr-3"></i></a>
+            <a href="{{ informations.youtube }}"><i class="fab fa-youtube fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <p dir="ltr" class="footer-text">‌Back-End Developed by
+          <span><a href="https://mr-python.ir/">Mr python</a></span>
+          </>
+          <p dir="ltr" class="footer-text">&copy; Front-End Designed and Developed by <span><a href="https://zil.ink/alijazbi">Ali Jazbi</a></span></>
+        </div>
+      </div>
+    </div>
+</footer>
+
+{% endblock %}
+
+{% block js %}{% endblock %}
+        
+</body>
+
+</html>
