@@ -40,6 +40,11 @@ function updateList() {
   //console.log('Filtered: ' + values_Field);
 }
 
+function highlightPagination(pageNum) {
+  $(".pagination li").removeClass("active");
+  $(".pagination li").eq(pageNum).addClass("active");
+}
+
 $(function () {
   //updateList();
   $("input[name=Field]").change(updateList);
@@ -53,5 +58,10 @@ $(function () {
       $(".no-result").show();
       $(".page-num").hide();
     }
+  });
+
+  $(document).on("click", ".pagination li", function() {
+    var pageNum = $(this).index();
+    highlightPagination(pageNum);
   });
 });

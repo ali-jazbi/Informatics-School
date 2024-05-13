@@ -27,6 +27,9 @@
     .Sign-Pages .content {
     padding: 7rem 0; 
     }
+    .Sign-Pages form{
+      background-color: ;
+    }
     .Sign-Pages h2 {
     font-size: 20px;
     }
@@ -97,6 +100,9 @@
         display: block;
         margin-bottom: 0;
         color: #b3b3b3; }
+        .form-group::placeholder{
+          
+        }
         .Sign-Pages .content .contents .form-group.focus, .Sign-Pages .content .bg .form-group.focus {
         background: #fff; }
         .Sign-Pages .content .contents .form-group.field--not-empty label:not(:last-child), .Sign-Pages .content .bg .form-group.field--not-empty label:not(:last-child) {
@@ -105,10 +111,11 @@
             opacity: 1;
             visibility: visible; }
     .Sign-Pages .content .contents .form-control, .Sign-Pages .content .bg .form-control {
+        height: 130% !important;
         border: none;
         padding: 0;
         font-size: 16px;
-        border-radius: 0; 
+        border-radius: 0;
       }
         .Sign-Pages .content .contents .form-control:active, .Sign-Pages .content .contents .form-control:focus, .Sign-Pages .content .bg .form-control:active, .Sign-Pages .content .bg .form-control:focus {
         outline: none;
@@ -275,30 +282,14 @@
     cursor: pointer;
     display: inline-block;
     position: relative;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    }
-    
-    .Sign-Pages article .signIN span:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: -15px;
+    width: 100% !important;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     }
     .Sign-Pages article .signIN:hover{
     background-color: #004f29;
     }
-    .Sign-Pages article .signIN:hover span {
-    padding-left: 15px;
-    }
     
-    .Sign-Pages article .signIN:hover span:after {
-    opacity: 1;
-    left: 0;
-    }
     .Sign-Pages .forgot-pass{
         text-decoration: none !important;
         position: relative;

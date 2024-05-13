@@ -1,19 +1,28 @@
-{% extends 'base.html' %}
-{% load static %}
-
-<title>{% block title %}ثبت نام موفقیت امیز بود{% endblock %}</title> 
-
-{% block css %}
-
-<link rel="stylesheet" href="{% static 'css/bootstrap.rtl.min.css' %}">
-<link rel="stylesheet" href="{% static 'css/bootstrap-icons.css' %}">
-<link rel="stylesheet" href="{% static 'css/demo/style.css' %}">
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
-<link rel="stylesheet" href="{% static 'css/login.css' %}">
-
+<!doctype html>
+<html lang="fa" dir="rtl">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ali Jazbi">
+        <meta http-equiv='cache-control' content='no-cache'>
+        <meta http-equiv='expires' content='0'>
+        <meta http-equiv='pragma' content='no-cache'>
+        <link rel="shortcut icon" href="./icon/informatics-website-favicon-color.ico" type="image/x-icon">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./plugins/Bootstrap/bootstrap.rtl.min.css">
+        <!-- Bootstrap Icon -->
+        <link rel="stylesheet" href="./plugins/Bootstrap/bootstrap-icons/bootstrap-icons.css">
+        <!-- icon -->
+        <link rel="stylesheet" href="./font/icomoon/style.css">
+        <!-- Costomized Styles -->    
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/login.css">
+        <title>ورود</title>
+        
 <style>
     .success_container{
-        height: 100vh;
+        height: 90vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -27,51 +36,84 @@
     }
 
     .success_container a{
-        background-color: greenyellow;
-        width: 200px;
-        height: 35px;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         text-decoration: none;
-        color: black;
         margin: 20px;
     }
+    .confirm-btn {
+        cursor: pointer;
+        font-weight: 700;
+        transition: all .2s;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: #cfef00;
+        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+      }
+      
+      .confirm-btn:hover {
+        background: #c4e201;
+      }
+      
+      .confirm-btn > svg {
+        width: 24px;
+        margin-left: 10px;
+        transition: transform .3s ease-in-out;
+      }
+      
+      .confirm-btn:hover svg {
+        transform: translateX(5px);
+      }
+      
+      .confirm-btn:active {
+        transform: scale(0.95);
+      }
 </style>
-
-{% endblock %}
-
-
-{% block content %}    
+    </head>
+    <body>
+        <!--NOTE Back to top button -->
+        <a href="#">
+            <button
+            type="button"
+            class="btn btn-danger btn-floating btn-lg"
+            id="btn-back-to-top"
+            >
+            <i class="bi bi-arrow-up"></i>
+            </button>
+        </a>
 
 
 <main class="Sign-Pages">
            
 <article dir="ltr">
          <div class="success_container">
-            <img width="300px" src="{% static 'img/success.png' %}" alt="">
+            <lottie-player src="./plugins/animated-icon/gif6.json"  background="transparent"  speed="1.5"  style="width: 300px;height:300px"  loop  autoplay></lottie-player>
             <h1>اطلاعات شما با موفقیت ثبت شد بعد از تایید مدیران میتوانید وارد حساب کاربری خود شوید</h1>
-            <a href="/">بازگشت به صفحه اصلی</a>
+            <a href="/">
+                <button class="confirm-btn">
+                    <span>بازگشت به صفحه اصلی</span>
+                    <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                        <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                    </svg>
+                </button>
+            </a>
          </div>
 </article>
                       
 </main>
 
-{% endblock %}  
-
-{% block js %}
-
-<script src="{% static 'js/jquery.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
-<script src="{% static 'js/script.js' %}"></script>
-<script src="{% static 'js/scrolls.min.js' %}"></script>
-<script src="{% static 'js/lotiePlayer.js' %}"></script>
-<script src="{% static 'js/finisher-header.es5.min.js' %}" type="text/javascript"></script>
-<script src="{% static 'js/progress.js' %}"></script>
-<script src="{% static 'js/style-header.js' %}"></script>
-<script src="{% static 'js/fixed-menu-lg.js' %}"></script>
-<script src="{% static 'js/login.js' %}"></script>
-
-{% endblock %}
-
+<script src="./plugins/jquery/jquery.min.js"></script>
+<script src="./plugins/Bootstrap/bootstrap.bundle.min.js"></script>
+<script src="./plugins/fontawesome/script.js"></script>
+<script src="./plugins/scrolls-main/scrolls.min.js"></script>
+<script src="./plugins/animated-icon/lotiePlayer.js"></script>
+<script src="./script/finisher-header.es5.min.js" type="text/javascript"></script>
+<script src="./script/progress.js"></script>
+<script src="./script/style-header.js"></script>
+<script src="./script/fixed-menu-lg.js"></script>
+<script src="./script/login.js"></script>
+<!-- <script src="./script/loader.js"></script> -->
+</body>
+</html>
